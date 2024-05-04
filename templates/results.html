@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details</title>
+  <style>
+    body {
+      background-color: #142d19; 
+      font-family: 'Times New Roman', Times, serif; 
+      font-size: medium;
+      margin: 0; 
+    }
+
+    .container {
+      max-width: 600px; 
+      margin: 50px auto; 
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+      background-color:#2a5c38; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+    }
+
+    h1 {
+      text-align: center; 
+      color: #95d1a1; 
+      margin-bottom: 20px; 
+    }
+
+    .event-details {
+      background-color: #347647;
+      padding: 20px; 
+      border-radius: 5px;
+      margin-bottom: 20px; 
+      width: 100%; 
+    }
+
+    .event-details p {
+      margin: 5px 0;
+      font-weight: bold; 
+      line-height: 1.5; 
+    }
+
+    .event-details p span {
+      font-weight: normal; 
+      color: #f5f1f1; 
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Event Details</h1>
+
+    <div class="event-details">
+      <p><span>Event ID:</span> {{ event_data.Event_ID }}</p>
+      <p><span>Event Name:</span> {{ event_data.Title }}</p>
+      <p><span>Attendee Number:</span> {{ event_data.Attendee_No }}</p>
+      <p><span>Date of Event:</span> {{ event_data.doe }}</p>
+      <p><span>Event Location:</span> {{ event_data.Location }}</p>
+      <p><span>Event Organizer:</span> {{ event_data.Organizer }}</p>
+      <p><span>Event Category:</span> {{ event_data.Event_Category }}</p>
+    </div>
+
+    </div>
+
+</body>
+</html>
+
